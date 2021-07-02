@@ -1,4 +1,5 @@
 # import and load pygame
+import random
 import pygame
 pygame.init()
 
@@ -8,8 +9,10 @@ size = input("Enter ball size: \n>> ")
 # check input is integer
 try:
     size = int(size)
-except ValueError:
-    size = 50
+    if size > 1000000:
+        size = random.randint(1, 600)
+except:
+    size = random.randint(1, 600)
 
 # create window for ball
 screen = pygame.display.set_mode([400, 400])
@@ -25,7 +28,7 @@ while running:
     screen.fill((200, 250, 200))
 
     # create the blue ball
-    pygame.draw.circle(screen, (000, 0, 255), (220, 200), int(size))
+    pygame.draw.circle(screen, (000, 0, 255), (220, 200), size)
     pygame.display.flip()
 
 pygame.quit()
