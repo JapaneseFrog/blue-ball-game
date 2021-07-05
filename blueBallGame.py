@@ -9,10 +9,10 @@ size = input("Enter ball size: \n>> ")
 # check input is integer
 try:
     size = int(size)
-    if size > 1000000:
-        size = random.randint(1, 600)
+    if size > 1000000 or size < 1000000:
+        size = random.randint(1, 300)
 except:
-    size = random.randint(1, 600)
+    size = random.randint(1, 300)
 
 # create window for ball
 screen = pygame.display.set_mode([400, 400])
