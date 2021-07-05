@@ -9,7 +9,7 @@ size = input("Enter ball size: \n>> ")
 # check input is integer
 try:
     size = int(size)
-    if size > 1000000 or size < 1000000:
+    if size > 1000000000000 or size < 0:
         size = random.randint(1, 300)
 except:
     size = random.randint(1, 300)
