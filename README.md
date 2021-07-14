@@ -1,5 +1,7 @@
 # BlueBallGame
 
+What is blue ball game? Well it's quite self-explanatory! You, yes, you! Are a blue ball!
+
 ### How to Install
 
 #### Windows
