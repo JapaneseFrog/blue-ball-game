@@ -10,7 +10,7 @@ What is blue ball game? Well it's quite self-explanatory! You, yes, you! Are a b
 
 #### Linux
 - Download the latest version of Python [here](https://python.org/download).
-- Go to your command line (linux) or CMD (Windows) and type `pip install pygame`
+- Go to your command line (Linux) or CMD (Windows) and type `pip install pygame`
 - Run the main.py file to start BlueBallGame
 
 
