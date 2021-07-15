@@ -119,26 +119,7 @@ class Enemy(pygame.sprite.Sprite):
         self.rect.move_ip(-self.speed, 0)
         if self.rect.right < 0:
             self.kill()
-
-
-# class RedBall(pygame.sprite.Sprite):
-#     def __init__(self):
-#         super(RedBall, self).__init__()
-#         self.surf = pygame.image.load("red.jpeg").convert()
-#         self.surf.set_colorkey((255, 255, 255))
-#         # random starting position
-#         self.rect = self.surf.get_rect(
-#             center=(
-#                 random.randint(0, screenWidth),
-#                 0,
-#             )
-#         )
-#
-#     # move down at random speed
-#     def update(self):
-#         self.rect.move_ip(0, 1)
-#         if self.rect.bottom >= screenHeight:
-#             self.rect.move_ip(0, -2)
+            
 
 # creates pygame window
 screen = pygame.display.set_mode([screenWidth, screenHeight])
