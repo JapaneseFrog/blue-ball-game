@@ -15,3 +15,5 @@
 - Let's go! - thriller2910
 
 - Thank you my thrilla! -JF
+
+- ok fella we need to talk, i am helping you. soon you will grow up to realise this. oh no, gotta go, the women are here! - thomas keig
