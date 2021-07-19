@@ -10,4 +10,6 @@
 
 - ITS ALL STILL AVALIABLE ON THE RELEASE STOP CRYING - from tom
 
-- Seriously doubting this project now, all of these contributors are doing my head in, I don't even know why they're called contributors, they only seem to contribute to doing my head in!!! To be fair, Thriller is a very nice contributor who got access to this repository through pure guile. P.S. People officially prefer the original pre-release to Tom's silly new one! -JF
+- Seriously doubting this project now, all of these contributors are doing my head in, I don't even know why they're called contributors, they only seem to contribute to doing my head in!!! To be fair, thriller is a very nice contributor who got access to this repository through pure guile. P.S. People officially prefer the original pre-release to Tom's silly new one! -JF
+
+- Let's go! - thriller2910
