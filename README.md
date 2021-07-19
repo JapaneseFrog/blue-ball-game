@@ -17,3 +17,5 @@
 - Thank you my thrilla! -JF
 
 - ok fella we need to talk, i am helping you. soon you will grow up to realise this. oh no, gotta go, the women are here! - thomas keig
+
+- HELP! hes changing the finnish version to be bad. sorry all my finnish fans. FBR out! - thomaskeig
