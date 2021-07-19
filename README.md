@@ -3,7 +3,7 @@
 [DOWNLOAD ALL FILES FROM HERE](https://github.com/JapaneseFrog/blue-ball-game/releases)
 
 ## Description
-**Currently waiting for thomas keig to make a read me. I don't know what goes in these sorts of files, I just make the game for crying out loud.**
+In this thrilling game, you can enjoy more blue, more ball, and best of all, more game! Enjoy the original feel of Blue Ball Game with all new controls and features. Can you use the new fast-paced environment to solve the mystery of Blue Ball?
 
 ## Contributor Log
 - Tom is really on a mad one right now, he's deleted all of my files and everything. I am very unhappy. Don't worry though guys, I have all the real original (not Tom) files on my personal computer, so if he really messes it up I can still restore everything to the REAL version of the game. Happy Balling! - from JF
