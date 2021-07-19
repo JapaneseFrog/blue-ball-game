@@ -1,4 +1,1 @@
-
-Disclaimer
-
-This entire GitHub is no longer under extreme repairs. Please do anything as it is all fixed. Thank you for your continued support. 
+Currently waiting for thomas keig to make a read me. I don't know what goes in these sorts of files, I just make the game for crying out loud.
