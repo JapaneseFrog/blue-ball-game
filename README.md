@@ -19,3 +19,5 @@ In this thrilling game, you can enjoy more blue, more ball, and best of all, mor
 - ok fella we need to talk, i am helping you. soon you will grow up to realise this. oh no, gotta go, the women are here! - thomas keig
 
 - HELP! hes changing the finnish version to be bad. sorry all my finnish fans. FBR out! - thomaskeig
+
+- About to release the full release of Blue Ball Game two edit 2b 96 [104.98]! Hope you guys have fun, I've been working on this one for a while. Feel free to open an issue with any bugs or requests and I'll see what I can do :D -JF
