@@ -4,6 +4,13 @@ import pygame.mixer
 import random
 import time
 import os
+import yaml
+
+with open('settings.yml') as file:
+    settings = yaml.load(file, Loader=yaml.FullLoader)
+    lang = settings['lang']
+    fps = settings['fps']
+
 
 # Import pygame.locals for easier access to key coordinates
 from pygame.locals import (
