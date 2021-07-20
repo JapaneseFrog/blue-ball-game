@@ -10,6 +10,7 @@ with open('settings.yml') as file:
     settings = yaml.load(file, Loader=yaml.FullLoader)
     lang = settings['lang']
     fps = settings['fps']
+    multiplayer = settings['multiplayer']
 
 
 # Import pygame.locals for easier access to key coordinates
@@ -27,13 +28,9 @@ from pygame.locals import (
 )
 
 # menu
-playerMode = input("single or multi player?\n>> ")
-if playerMode == "M" or playerMode == "m":
-    multiplayer = True
-else:
+if multiplayer != True or multiplayer != False:
     multiplayer = False
-
-fps = input("enter framerate\n>> ")
+    
 try:
     fps = int(fps)
 except:
