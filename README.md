@@ -29,3 +29,5 @@ In this thrilling game, you can enjoy more blue, more ball, and best of all, mor
 - Repo lol. BTW, Tom really stinks! hahaha - JF
 
 - NOOO WE NEED TO KEEP THE AMAZING MUSIC - keig
+
+- When Tom speaks all I hear is blah blah blah blah blah pleaasee nooooo -JF
