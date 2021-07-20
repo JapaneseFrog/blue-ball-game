@@ -15,22 +15,22 @@ from pygame.locals import (
     K_w,
     K_s,
     K_a,
-    K_d,
-    QUIT,
+    K_d
 )
 
 # menu
-playerMode = input("Haluatko yksinpeli vai moninpeli? (Y/M)\n>> ")
+playerMode = input("single or multi player?\n>> ")
 if playerMode == "M" or playerMode == "m":
     multiplayer = True
 else:
     multiplayer = False
 
-fps = input("Kirjoita ruudunpäivitysnopeus\n>> ")
+fps = input("enter framerate\n>> ")
+try:
+    fps = int(fps)
+except:
+    fps = int(random.randint(60, 180))
 
-# set dimensions of pygame window
-screenWidth = 1000
-screenHeight = 600
 
 # set blue ball colour to random shade of blue
 blueList = [(17, 30, 108), (29, 41, 81), (0, 49, 82), (0, 0, 128), (14, 77, 146), (16, 52, 166)]
@@ -52,14 +52,14 @@ class Player1(pygame.sprite.Sprite):
 
     # move player based on keys pressed
     def update(self, pressed_keys):
-        if pressed_keys[K_UP]:
-            self.rect.move_ip(0, -1)
-        if pressed_keys[K_DOWN]:
-            self.rect.move_ip(0, 1)
-        if pressed_keys[K_LEFT]:
-            self.rect.move_ip(-1, 0)
-        if pressed_keys[K_RIGHT]:
-            self.rect.move_ip(1, 0)
+        if pressed_keys[K_w]:
+            self.rect.move_ip(0, -2)
+        if pressed_keys[K_s]:
+            self.rect.move_ip(0, 2)
+        if pressed_keys[K_a]:
+            self.rect.move_ip(-2, 0)
+        if pressed_keys[K_d]:
+            self.rect.move_ip(2, 0)
 
         # keep player on screen
         if self.rect.left < 0:
@@ -82,14 +82,14 @@ class Player2(pygame.sprite.Sprite):
 
     # move player based on keys pressed
     def update(self, pressed_keys):
-        if pressed_keys[K_w]:
-            self.rect.move_ip(0, -1)
-        if pressed_keys[K_s]:
-            self.rect.move_ip(0, 1)
-        if pressed_keys[K_a]:
-            self.rect.move_ip(-1, 0)
-        if pressed_keys[K_d]:
-            self.rect.move_ip(1, 0)
+        if pressed_keys[K_UP]:
+            self.rect.move_ip(0, -2)
+        if pressed_keys[K_DOWN]:
+            self.rect.move_ip(0, 2)
+        if pressed_keys[K_LEFT]:
+            self.rect.move_ip(-2, 0)
+        if pressed_keys[K_RIGHT]:
+            self.rect.move_ip(2, 0)
 
         # keep player on screen
         if self.rect.left < 0:
@@ -113,35 +113,43 @@ class Enemy(pygame.sprite.Sprite):
                 random.randint(0, screenHeight)
             )
         )
-        self.speed = random.randint(1, 3)
+        self.speed = random.randint(1, 4)
 
     def update(self):
         self.rect.move_ip(-self.speed, 0)
         if self.rect.right < 0:
             self.kill()
+        # kill enemy upon being clicked (this is just to test clicking sprites)
+        if pygame.mouse.get_pressed()[0] and self.rect.collidepoint(mousePos):
+            self.kill()
 
 
-# class RedBall(pygame.sprite.Sprite):
-#     def __init__(self):
-#         super(RedBall, self).__init__()
-#         self.surf = pygame.image.load("red.jpeg").convert()
-#         self.surf.set_colorkey((255, 255, 255))
-#         # random starting position
-#         self.rect = self.surf.get_rect(
-#             center=(
-#                 random.randint(0, screenWidth),
-#                 0,
-#             )
-#         )
-#
-#     # move down at random speed
-#     def update(self):
-#         self.rect.move_ip(0, 1)
-#         if self.rect.bottom >= screenHeight:
-#             self.rect.move_ip(0, -2)
+class Dot(pygame.sprite.Sprite):
+    def __init__(self):
+        super(Dot, self).__init__()
+        self.surf = pygame.Surface((10, 10))
+        self.surf.fill((120, 90, 90))
+        # random starting position
+        self.rect = self.surf.get_rect(
+            center=(
+                random.randint(0, screenWidth),
+                0,
+            )
+        )
 
+    # move down at random speed
+    def update(self):
+        self.rect.move_ip(0, random.randint(1, 5))
+        if self.rect.top >= screenHeight:
+            self.kill()
+        
+
+
+# screen dimensions
+screenWidth = 1366
+screenHeight = 768
 # creates pygame window
-screen = pygame.display.set_mode([screenWidth, screenHeight])
+screen = pygame.display.set_mode((screenWidth, screenHeight), pygame.RESIZABLE)
 
 # initialise mixer for handling sound
 pygame.mixer.init()
@@ -150,7 +158,7 @@ pygame.mixer.init()
 pygame.init()
 
 # load and play background music
-# source: aphex twin
+# source: a cornish man
 pygame.mixer.music.load("film.wav")
 pygame.mixer.music.play(loops=-1)
 
@@ -161,9 +169,9 @@ clock = pygame.time.Clock()
 
 # create custom event for spawning enemies and reds
 AddEnemy = pygame.USEREVENT + 1
-pygame.time.set_timer(AddEnemy, random.randint(100, 300))
-AddRed = pygame.USEREVENT + 2
-pygame.time.set_timer(AddRed, 1000)
+pygame.time.set_timer(AddEnemy, fps)
+AddDot = pygame.USEREVENT + 2
+pygame.time.set_timer(AddDot, random.randint(100, 500))
 
 # instantiate players
 player1 = Player1()
@@ -172,7 +180,7 @@ if multiplayer:
 
 # create sprite groups
 enemies = pygame.sprite.Group()
-reds = pygame.sprite.Group()
+dots = pygame.sprite.Group()
 all_sprites = pygame.sprite.Group()
 all_sprites.add(player1)
 if multiplayer:
@@ -208,21 +216,22 @@ while running:
             enemies.add(newEnemy)
             all_sprites.add(newEnemy)
 
-        # spawn new red
-        # elif event.type == AddRed:
-        #     newRed = RedBall()
-        #     reds.add(newRed)
-        #     all_sprites.add(newRed)
+        # spawn new dot
+        elif event.type == AddDot:
+            newDot = Dot()
+            dots.add(newDot)
+            all_sprites.add(newDot)
 
     # get all keys currently pressed and change player accordingly
     pressed_keys = pygame.key.get_pressed()
+    mousePos = pygame.mouse.get_pos()
     player1.update(pressed_keys)
     if multiplayer:
         player2.update(pressed_keys)
 
     # update enemies and reds sprite groups
     enemies.update()
-    reds.update()
+    dots.update()
 
     # fills screen with colour
     screen.fill((140, 110, 110))
@@ -230,6 +239,9 @@ while running:
     # draw every entity to its rect position
     for entity in all_sprites:
         screen.blit(entity.surf, entity.rect)
+        screen.blit(player1.surf, player1.rect)
+        if multiplayer and player2alive:
+            screen.blit(player2.surf, player2.rect)
 
     # check for collisions, kill player and close window if collide
     if pygame.sprite.spritecollideany(player1, enemies):
@@ -272,11 +284,10 @@ while running:
 
     clock.tick(int(fps))
 
-
-time.sleep(1)
+time.sleep(0.5)
 pygame.mixer.music.stop()
 pygame.mixer.quit()
 pygame.quit()
-print("Player1 (arrow keys) score: ", player1score)
+print("Player1 (wasd) score: ", int(player1score))
 if multiplayer:
-    print("Player2 (wasd) score: ", player2score)
+    print("Player2 (arrow keys) score: ", int(player2score))
