@@ -26,4 +26,6 @@ In this thrilling game, you can enjoy more blue, more ball, and best of all, mor
 ### 20/7/2021
 - About to start working on moving the new release to the master repo! It's a shame we won't be able to fit all our amazing music on the master repo due to size limits! - thriller2910
 
+- Repo lol. BTW, Tom really stinks! hahaha - JF
+
 - NOOO WE NEED TO KEEP THE AMAZING MUSIC - keig
