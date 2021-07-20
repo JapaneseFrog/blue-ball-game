@@ -23,4 +23,7 @@ In this thrilling game, you can enjoy more blue, more ball, and best of all, mor
 
 - About to release the full release of Blue Ball Game two edit 2b 96 [104.98]! Hope you guys have fun, I've been working on this one for a while. Feel free to open an issue with any bugs or requests and I'll see what I can do :D -JF
 
+### 20/7/2021
 - About to start working on moving the new release to the master repo! It's a shame we won't be able to fit all our amazing music on the master repo due to size limits! - thriller2910
+
+- NOOO WE NEED TO KEEP THE AMAZING MUSIC - keig
