@@ -3,7 +3,6 @@ import pygame.gfxdraw
 import pygame.mixer
 import random
 import time
-import os
 
 # Import pygame.locals for easier access to key coordinates
 from pygame.locals import (
@@ -31,7 +30,6 @@ try:
     fps = int(fps)
 except:
     fps = int(random.randint(60, 180))
-
 
 
 # set blue ball colour to random shade of blue
@@ -147,28 +145,6 @@ class Dot(pygame.sprite.Sprite):
         
 
 
-class Dot(pygame.sprite.Sprite):
-    def __init__(self):
-        super(Dot, self).__init__()
-        self.surf = pygame.Surface((10, 10))
-        self.surf.fill((120, 90, 90))
-        # random starting position
-        self.rect = self.surf.get_rect(
-            center=(
-                random.randint(0, screenWidth),
-                0,
-            )
-        )
-
-    # move down at random speed
-    def update(self):
-        self.rect.move_ip(0, random.randint(1, 5))
-        if self.rect.top >= screenHeight:
-            self.kill()
-      
-
-
-
 # screen dimensions
 screenWidth = 1366
 screenHeight = 768
@@ -281,7 +257,6 @@ while running:
             player2.kill()
             player2alive = False
 
-
     # increase score for alive players, if none alive then stop game
     # multiplayer
     if multiplayer:
@@ -313,8 +288,6 @@ time.sleep(0.5)
 pygame.mixer.music.stop()
 pygame.mixer.quit()
 pygame.quit()
-
 print("Player1 (wasd) score: ", int(player1score))
 if multiplayer:
     print("Player2 (arrow keys) score: ", int(player2score))
-
