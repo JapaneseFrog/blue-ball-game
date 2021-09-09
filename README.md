@@ -33,3 +33,6 @@ In this thrilling game, you can enjoy more blue, more ball, and best of all, mor
 - When Tom speaks all I hear is blah blah blah blah blah pleaasee nooooo -JF
 
 - hes so bloody mean - keig
+
+### 9/9/2021
+- Anyone here? It's like a ghost town :( - keig
