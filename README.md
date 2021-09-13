@@ -36,3 +36,5 @@ In this thrilling game, you can enjoy more blue, more ball, and best of all, mor
 
 ### 9/9/2021
 - Anyone here? It's like a ghost town :( - keig
+
+- This town.... is looking like a ghost town! all the shops have been... closed down! -JF
