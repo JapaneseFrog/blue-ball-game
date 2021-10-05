@@ -41,3 +41,6 @@ In this thrilling game, you can enjoy more blue, more ball, and best of all, mor
 - This town.... is looking like a ghost town! all the shops have been... closed down! -JF
 
 - this is no time for singing. blue ball game will come back and it'll come back better than ever!
+
+### 5/10/2021
+- I JUST WATCHED JACK KISS AIMEE ON THE SIDE OF HER HEAD. CODE RED CODE RED -fbr boy
