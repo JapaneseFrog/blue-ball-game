@@ -44,3 +44,5 @@ In this thrilling game, you can enjoy more blue, more ball, and best of all, mor
 
 ### 5/10/2021
 - I JUST WATCHED JACK KISS AIMEE ON THE SIDE OF HER HEAD. CODE RED CODE RED -fbr boy
+
+- hello thriller is it ok if we sit with you and aimee? thank and im looking forward to your reply. - fbr out!
