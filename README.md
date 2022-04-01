@@ -52,3 +52,6 @@ In this thrilling game, you can enjoy more blue, more ball, and best of all, mor
 - I'm sat over with thriller now and it's just so intresting, theres some sort of turtle that some girls are hiding in their bras and its all going down. My excitement is through the roof! :] FBR OUT! -tk
 
 - I JUST WATCHED JACK KISS AIMEE ON THE SIDE OF HER HEAD AGAIN AND INFRONT OF THE CHILDERN. CODE BLUE CODE BLUE -fbr boy
+
+### 1/4/2022
+- Please can we keep this log on topic of blue ball!! Anyway this game is pretty much finished if you think it's buggy then it's just a feature... Also starting a brand new project called Blue Ball Game: Reballed! Stay tuned...
