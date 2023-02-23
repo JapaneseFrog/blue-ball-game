@@ -56,5 +56,5 @@ In this thrilling game, you can enjoy more blue, more ball, and best of all, mor
 ### 1/4/2022
 - Please can we keep this log on topic of blue ball!! Anyway this game is pretty much finished if you think it's buggy then it's just a feature... Also starting a brand new project called Blue Ball Game: Reballed! Stay tuned...
 
-### 23/3/2023
+### 23/2/2023
 - I can't wait to see the next release of BlueBallGame! I cannot wait! - fbr out!
