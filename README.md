@@ -58,3 +58,6 @@ In this thrilling game, you can enjoy more blue, more ball, and best of all, mor
 
 ### 23/2/2023
 - I can't wait to see the next release of BlueBallGame! I cannot wait! - fbr out!
+
+### 21/11/2023
+- Hey guys, I'm still waiting by the way... - fbr out
